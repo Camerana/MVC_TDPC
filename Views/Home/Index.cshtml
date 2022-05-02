@@ -1,8 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@model UserModel;
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @*
+        @{
+            string name = Model.Name;
+            string lastName = Model.LastName;
+
+            string result = string.Empty;
+            for (int i = 0; i < 10; i++)
+            {
+                result += name + " " + lastName;
+            }
+        }
+
+        <h1 class="display-4">Welcome @result</h1>
+    *@
+    <h1 class="display-4">Welcome @Model.Name @Model.LastName</h1>
 </div>

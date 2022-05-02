@@ -20,7 +20,10 @@ namespace MVC_TDPC13.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            UserModel model = new UserModel();
+            model.Name = "Ciccio";
+            model.LastName= "Pasticcio";
+            return View(model);
         }
 
         public IActionResult Privacy()
