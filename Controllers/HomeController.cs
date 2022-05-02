@@ -42,8 +42,15 @@ namespace MVC_TDPC13.Controllers
         public IActionResult Music()
         {
             MusicModel model = new MusicModel();
-            model.ArtistName = "AC/DC";
-            model.SongName = "You shook me all night long";
+            for (int i = 0; i < 10; i++)
+            {
+                model.Songs.Add(
+                    new MusicModel.SongAndArtistModel()
+                    {
+                        ArtistName = "Artista " + i,
+                        SongName = "Canzone " + i
+                    });
+            }
             return View(model);
         }
 

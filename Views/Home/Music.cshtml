@@ -4,8 +4,13 @@
 @model MusicModel;
 <h1>@ViewData["Title"]</h1>
 
-<div>Song name: @Model.SongName</div>
-<div>Artist: @Model.ArtistName</div>
+@{
+    for (int i = 0; i < Model.Songs.Count; i++)
+    {
+        <div>Song name: @Model.Songs[i].SongName</div>
+        <div>Artist: @Model.Songs[i].ArtistName</div>
+    }
+}
 
 
 

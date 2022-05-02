@@ -7,7 +7,12 @@ namespace MVC_TDPC13.Models
 {
     public class MusicModel
     {
-        public string SongName { get; set; }
-        public string ArtistName { get; set; }
+        public List<SongAndArtistModel> Songs { get; set; } = new List<SongAndArtistModel>();
+
+        public class SongAndArtistModel
+        {
+            public string SongName { get; set; }
+            public string ArtistName { get; set; }
+        }
     }
 }
