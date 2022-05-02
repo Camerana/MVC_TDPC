@@ -22,7 +22,7 @@ namespace MVC_TDPC13.Controllers
         {
             UserModel model = new UserModel();
             model.Name = "Ciccio";
-            model.LastName= "Pasticcio";
+            model.LastName = "Pasticcio";
             return View(model);
         }
 
@@ -38,6 +38,13 @@ namespace MVC_TDPC13.Controllers
         public IActionResult ButtonPage()
         {
             return View();
+        }
+        public IActionResult Music()
+        {
+            MusicModel model = new MusicModel();
+            model.ArtistName = "AC/DC";
+            model.SongName = "You shook me all night long";
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
