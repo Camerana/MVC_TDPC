@@ -28,7 +28,6 @@ namespace MVC_TDPC13
             //services.AddSingleton
             services.AddScoped<IDBConnection, SQLServerConnection>();
             //services.AddTransient
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

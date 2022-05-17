@@ -10,6 +10,18 @@ using System.Threading.Tasks;
 
 namespace MVC_TDPC13.Controllers
 {
+    /*
+    - creare un servizio che restituisca un numero casuale con:
+        - interfaccia IRandomNumber
+        - classe IRandomNumberLessThan10 (numero casuale < 10)
+        - classe IRandomNumberGreaterThan50 (numero casuale > 50)
+    - tramite dependency injection passare un oggetto di tipo
+    IRandomNumber a HomeController
+    - creare un endpoint RandomNumberPage in HomeController
+    - tramite l'endpoint RandomNumberPage mostrare in una view il numero
+    generato dal servizio
+    - nello startup.cs configurare il servizio da usare (services.add..)
+     */
     public class HomeController : Controller
     {
         private readonly IDBConnection DBConnection;
