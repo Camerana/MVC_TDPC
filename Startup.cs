@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MVC_TDPC13.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,10 @@ namespace MVC_TDPC13
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            //services.AddSingleton
+            services.AddScoped<IDBConnection, SQLServerConnection>();
+            //services.AddTransient
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
