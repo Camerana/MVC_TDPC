@@ -13,8 +13,8 @@ namespace MVC_TDPC13.Controllers
     /*
     - creare un servizio che restituisca un numero casuale con:
         - interfaccia IRandomNumber
-        - classe IRandomNumberLessThan10 (numero casuale < 10)
-        - classe IRandomNumberGreaterThan50 (numero casuale > 50)
+        - classe RandomNumberLessThan10 (numero casuale < 10)
+        - classe RandomNumberGreaterThan50 (numero casuale > 50)
     - tramite dependency injection passare un oggetto di tipo
     IRandomNumber a HomeController
     - creare un endpoint RandomNumberPage in HomeController
