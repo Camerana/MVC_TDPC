@@ -25,10 +25,13 @@ namespace MVC_TDPC13.Controllers
     public class HomeController : Controller
     {
         private readonly IDBConnection DBConnection;
+        private readonly IRandomNumber RandomNumber;
 
-        public HomeController(IDBConnection DBConnection)
+        public HomeController(IDBConnection DBConnection,
+            IRandomNumber RandomNumber)
         {
             this.DBConnection = DBConnection;
+            this.RandomNumber = RandomNumber;
         }
 
         public IActionResult Index()
@@ -55,6 +58,13 @@ namespace MVC_TDPC13.Controllers
             string result = this.DBConnection.Connect();
             DBConnectionModel model = new DBConnectionModel();
             model.DBConnectionResult = result;
+            return View(model);
+        }
+
+        public IActionResult RandomNumberPage()
+        {
+            RandomNumberPageModel model = new RandomNumberPageModel();
+            model.RandomNumber = RandomNumber.GenerateNumber();
             return View(model);
         }
 

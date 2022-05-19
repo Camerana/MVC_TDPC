@@ -27,6 +27,7 @@ namespace MVC_TDPC13
             services.AddControllersWithViews();
             //services.AddSingleton
             services.AddScoped<IDBConnection, SQLServerConnection>();
+            services.AddScoped<IRandomNumber, RandomNumberLessThan10>();
             //services.AddTransient
         }
 
