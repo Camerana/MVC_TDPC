@@ -9,6 +9,13 @@ using System.Threading.Tasks;
 
 namespace MVC_TDPC13.Controllers
 {
+    /*
+    - Creare nella pagina Javascript.cshtml un nuovo tasto che
+    chiami un endpoint di tipo GET GetTDPC13Data che restituisca
+    un numero casuale.
+    - Loggare in console e scrivere in pagina il risultato ottenuto dall'endpoint
+     
+     */
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
