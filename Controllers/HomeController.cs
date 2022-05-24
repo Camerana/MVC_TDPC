@@ -11,8 +11,12 @@ namespace MVC_TDPC13.Controllers
 {
     /*
     - Creare nella pagina Javascript.cshtml un nuovo tasto che
-    chiami un endpoint di tipo GET GetTDPC13Data che restituisca
-    un numero casuale.
+    chiami un endpoint di tipo GET GetMusicModels che restituisca
+    una lista di oggetti di tipo MusicModel (da creare nella
+    folder models).
+    - la classe Music ha due properties:
+        - string Cantante
+        - string Canzone
     - Loggare in console e scrivere in pagina il risultato ottenuto 
     dall'endpoint
      
