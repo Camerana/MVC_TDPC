@@ -64,7 +64,7 @@ namespace MVC_TDPC13.Controllers
         }
         public IActionResult PersonsWithFilter()
         {
-            List<Person> persons = this.repository.GetPersonWithFilter("lu");
+            List<Person> persons = this.repository.GetPersonWithFilter("sempr");
             List<PersonModel> model = new List<PersonModel>();
             foreach (Person p in persons)
                 model.Add(new PersonModel()
