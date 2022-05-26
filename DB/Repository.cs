@@ -15,16 +15,20 @@ namespace MVC_TDPC13.DB
         }
         public List<Person> GetPersons()
         {
+            //select * from persons
             List<Person> result = this.DBContext.Persons.ToList();
             return result;
         }
         public Person GetPersonByID(string id)
         {
+            //select * from persons where id = "id"
             Person result = this.DBContext.Persons.Where(p => p.ID.ToString() == id).FirstOrDefault();
             return result;
         }
         public List<Person> GetPersonWithFilter(string filter)
         {
+            //select * from persons where nome like "%filter%"
+            //or cognome like "%filter%"
             List<Person> result = this.DBContext.Persons
                 .Where(p => p.Nome.Contains(filter)
                 || p.Cognome.Contains(filter)).ToList();
