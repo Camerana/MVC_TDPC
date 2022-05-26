@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Button Page";
+}
+<h1>@ViewData["Title"]</h1>
+
+@model List<PersonModel>;
+
+<table>
+    <tr>
+        <td>Nome</td>
+        <td>Cognome</td>
+    </tr>
+    @foreach (PersonModel p in Model)
+    {
+    <tr>
+        <td>@p.Nome</td>
+        <td>@p.Cognome</td>
+    </tr>
+    }
+</table>
