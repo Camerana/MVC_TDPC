@@ -1,0 +1,17 @@
+﻿SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Persons](
+	[ID] [uniqueidentifier] NULL,
+	[Nome] [nvarchar](max) NULL,
+	[Cognome] [nvarchar](50) NULL,
+	[Stipendio] [decimal](15, 3) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+INSERT [dbo].[Persons] ([ID], [Nome], [Cognome], [Stipendio]) VALUES (N'ec4a0fd2-269f-4280-b359-33544e1ab848', N'Tizio', N'Tizi', CAST(60000.000 AS Decimal(15, 3)))
+GO
+INSERT [dbo].[Persons] ([ID], [Nome], [Cognome], [Stipendio]) VALUES (N'4cf2c67f-25d6-406c-a700-92ea796afa57', N'Caio', N'Cai', CAST(30000.000 AS Decimal(15, 3)))
+GO
+INSERT [dbo].[Persons] ([ID], [Nome], [Cognome], [Stipendio]) VALUES (N'5e558b4c-9cce-4265-af2d-fe951d17825d', N'Sempronio', N'Semproni', NULL)
+GO
