@@ -11,6 +11,19 @@ using System.Threading.Tasks;
 
 namespace MVC_TDPC13.Controllers
 {
+    /*
+     esercizio:
+        - aggiungere un API controller con una post che crei una Person
+        su DB prendendo i dati dall'input dell'utente nel frontend
+    passi:
+        - creare un API controller con la post di insert
+            - esempio nel branch MVCeAPI nel PersonController
+        - creare in una view un form di insert con n textbox e un button di insert
+        - creare una funzione js collegata al button di insert che
+        chiami l'endpoint post del controller
+        - nell'endpoint del controller chiamare l'insert della repository
+            - esempio nel branch EntityFramework in HomeController
+     */
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -76,6 +89,7 @@ namespace MVC_TDPC13.Controllers
         }
         public IActionResult InsertPerson()
         {
+            /*
             Person person = new Person()
             {
                 Nome = "Insert Nome",
@@ -88,6 +102,8 @@ namespace MVC_TDPC13.Controllers
                 Nome = person.Nome,
                 Cognome = person.Cognome
             });
+            */
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
