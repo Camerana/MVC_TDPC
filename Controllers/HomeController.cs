@@ -16,6 +16,15 @@ namespace MVC_TDPC13.Controllers
         - aggiungere un API controller con una post che crei una Person
         su DB prendendo i dati dall'input dell'utente nel frontend
     passi:
+        - creare database con nome arbitrario
+        - creare tabella Persons
+        - creare la connection string nell'appsettings.json
+        - importare i pacchetti nuget necessari (guardare nelle 
+        dependencies di questo progetto)
+        - creare il DBContext
+        - creare la Repository
+        - registrare i servizi necessari in Startup.cs
+        (dbcontext, repository)
         - creare un API controller con la post di insert
             - esempio nel branch MVCeAPI nel PersonController
         - creare in una view un form di insert con n textbox e un button di insert
