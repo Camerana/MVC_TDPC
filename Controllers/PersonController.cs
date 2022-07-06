@@ -28,7 +28,7 @@ namespace MVC_TDPC13.Controllers
             person.Nome = model.Nome;
             person.Cognome = model.Cognome;
             this.repository.InsertPerson(person);
-            return Ok();
+            return Ok(200);
         }
     }
 }
