@@ -39,5 +39,14 @@ namespace MVC_TDPC13.DB
             this.DBContext.Persons.Add(person);
             this.DBContext.SaveChanges();
         }
+        public void DeletePerson(string ID)
+        {
+            Person toDelete = this.DBContext.Persons
+                    //.Where(p => p.ID != null && p.ID.Value.ToString() == ID) nel caso fosse nullable
+                    .Where(p => p.ID.ToString() == ID)
+                    .FirstOrDefault();
+            this.DBContext.Persons.Remove(toDelete);
+            this.DBContext.SaveChanges();
+        }
     }
 }

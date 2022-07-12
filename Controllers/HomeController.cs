@@ -69,6 +69,7 @@ namespace MVC_TDPC13.Controllers
             foreach (Person p in persons)
                 model.Add(new PersonModel()
                 {
+                    ID = p.ID.ToString(),
                     Nome = p.Nome,
                     Cognome = p.Cognome
                 });
@@ -79,6 +80,7 @@ namespace MVC_TDPC13.Controllers
             Person person = this.repository.GetPersonByID("4CF2C67F-25D6-406C-A700-92EA796AFA57");
             PersonModel model = new PersonModel()
             {
+                ID = person.ID.ToString(),
                 Nome = person.Nome,
                 Cognome = person.Cognome
             };
@@ -91,6 +93,7 @@ namespace MVC_TDPC13.Controllers
             foreach (Person p in persons)
                 model.Add(new PersonModel()
                 {
+                    ID = p.ID.ToString(),
                     Nome = p.Nome,
                     Cognome = p.Cognome
                 });
@@ -113,6 +116,20 @@ namespace MVC_TDPC13.Controllers
             });
             */
             return View();
+        }
+
+        public IActionResult DeletePerson()
+        {
+            List<Person> persons = this.repository.GetPersons();
+            List<PersonModel> model = new List<PersonModel>();
+            foreach (Person p in persons)
+                model.Add(new PersonModel()
+                {
+                    ID = p.ID.ToString(),
+                    Nome = p.Nome,
+                    Cognome = p.Cognome
+                });
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

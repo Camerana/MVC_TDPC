@@ -20,14 +20,20 @@ namespace MVC_TDPC13.Controllers
             this.repository = repository;
         }
 
-        // POST api/<PersonController>
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] PersonModel model)
+        [HttpPost("InsertPerson")]
+        public async Task<IActionResult> InsertPerson([FromBody] PersonModel model)
         {
             Person person = new Person();
             person.Nome = model.Nome;
             person.Cognome = model.Cognome;
             this.repository.InsertPerson(person);
+            return Ok(200);
+        }
+
+        [HttpPost("DeletePerson")]
+        public async Task<IActionResult> DeletePerson([FromBody] PersonModel model)
+        {
+            this.repository.DeletePerson(model.ID);
             return Ok(200);
         }
     }
