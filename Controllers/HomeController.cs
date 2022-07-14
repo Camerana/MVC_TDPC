@@ -32,7 +32,7 @@ namespace MVC_TDPC13.Controllers
     - creare la classe LoginModel
     - creare la view Login.cshtml
     - creare la view Logout.cshtml
-    - copiare i link dal Layout.cshtml
+    - copiare i link di navigazione dal Layout.cshtml
     - in HomeController: 
         - fare dependency injection di:
             private SignInManager<User> signInManager;
