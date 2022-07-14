@@ -10,6 +10,31 @@ using System.Threading.Tasks;
 
 namespace MVC_TDPC13.Controllers
 {
+    /*
+    - creare DB per l'identity
+    - eseguire script DBscript.txt
+    - creare classe User : IdentityUser
+    - creare classe UserDBContext : IdentityDbContext<User>
+    - registrare i servizi in startup in ConfigureServices(IServiceCollection services):
+        services.AddDbContext<UserDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("AuthDB")));
+
+        //User Management
+        services.AddIdentity<User, IdentityRole>()
+            .AddEntityFrameworkStores<UserDBContext>()
+            .AddDefaultTokenProviders();
+        services.AddScoped<SignInManager<User>>();
+        services.AddScoped<UserManager<User>>();
+        services.AddScoped<RoleManager<IdentityRole>>();
+    - aggiungere in startup in Configure(IApplicationBuilder app, IWebHostEnvironment env):
+        app.UseAuthentication();
+        app.UseAuthorization();
+    - creare la classe LoginModel
+    - creare la view Login.cshtml
+    - in HomeController: 
+        - creare l'endpoint public IActionResult Login()
+        - creare l'endpoint public async Task<IActionResult> Login(LoginModel loginModel)
+        - creare l'endpoint public async Task<IActionResult> Logout()
+     */
     public class HomeController : Controller
     {
         private SignInManager<User> signInManager;
