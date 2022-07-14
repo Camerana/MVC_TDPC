@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Update Person";
+}
+@using System.Collections.Generic;
+@model List<PersonModel>;
+<h1>@ViewData["Title"]</h1>
+<div class="container">
+    @{
+        <table>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td>@Model[i].Nome</td>
+                    <td>@Model[i].Cognome</td>
+                    <td><button class="btn-sm btn-danger" onclick="updatePersonById('@Model[i].ID')">Update</button></td>
+                </tr>
+            }
+        </table>
+    }
+</div>
