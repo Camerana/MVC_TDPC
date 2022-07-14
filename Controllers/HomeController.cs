@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace MVC_TDPC13.Controllers
 {
     /*
-    - creare DB per l'identity
+    - creare DB per l'identity IdentityAuthDB
     - eseguire script DBscript.txt
     - creare classe User : IdentityUser
     - creare classe UserDBContext : IdentityDbContext<User>
