@@ -15,6 +15,7 @@ namespace MVC_TDPC13.Controllers
     - eseguire script DBscript.txt
     - creare classe User : IdentityUser
     - creare classe UserDBContext : IdentityDbContext<User>
+    - aggiungere la connection string in appsettings.json
     - registrare i servizi in startup in ConfigureServices(IServiceCollection services):
         services.AddDbContext<UserDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("AuthDB")));
 
