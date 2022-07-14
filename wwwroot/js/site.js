@@ -83,14 +83,14 @@ function deletePersonById(id) {
 function updatePersonById(id) {
     nameP = document.createElement("p");
     nameP.style.textAlign = "center";
-    nameP.innerText = 'Name';
+    nameP.innerText = 'Nome';
     document.getElementById("modal-body").appendChild(nameP);
     nameTextArea = document.createElement("input");
     nameP.appendChild(nameTextArea);
 
     lastNameP = document.createElement("p");
     lastNameP.style.textAlign = "center";
-    lastNameP.innerText = 'Last Name';
+    lastNameP.innerText = 'Cognome';
     document.getElementById("modal-body").appendChild(lastNameP);
     lastNameTextArea = document.createElement("input");
     lastNameP.appendChild(lastNameTextArea);
