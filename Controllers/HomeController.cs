@@ -31,7 +31,6 @@ namespace MVC_TDPC13.Controllers
         app.UseAuthorization();
     - creare la classe LoginModel
     - creare la view Login.cshtml
-    - creare la view Logout.cshtml
     - copiare i link di navigazione dal Layout.cshtml
     - in HomeController: 
         - fare dependency injection di:
