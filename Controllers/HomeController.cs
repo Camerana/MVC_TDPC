@@ -32,6 +32,18 @@ namespace MVC_TDPC13.Controllers
     - creare la classe LoginModel
     - creare la view Login.cshtml
     - in HomeController: 
+        - fare dependency injection di:
+            private SignInManager<User> signInManager;
+            private UserManager<User> userManager;
+            private UserDBContext dbContext;
+            public HomeController(SignInManager<User> signInManager,
+                UserManager<User> userManager,
+                UserDBContext dbContext)
+            {
+                this.signInManager = signInManager;
+                this.userManager = userManager;
+                this.dbContext = dbContext;
+            }
         - creare l'endpoint public IActionResult Login()
         - creare l'endpoint public async Task<IActionResult> Login(LoginModel loginModel)
         - creare l'endpoint public async Task<IActionResult> Logout()
