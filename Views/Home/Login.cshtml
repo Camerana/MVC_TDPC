@@ -6,8 +6,8 @@
 @using Microsoft.AspNetCore.Identity
 @using MVC_TDPC13.DB.Entities
 @inject SignInManager<User> SignInManager
-    @if (!SignInManager.IsSignedIn(User))
-    {
+@if (!SignInManager.IsSignedIn(User))
+{
     <div class="container">
         <div class="row">
             <div class="col-6">
@@ -25,8 +25,8 @@
             </div>
         </div>
     </div>
-    }
-    else
-    {
+}
+else
+{
     <div>Sei già loggato</div>
-    }
+}
