@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MVC_TDPC13.DB.Entities;
+using MVC_TDPC.DB.Entities;
 
-namespace MVC_TDPC13.DB
+namespace MVC_TDPC.DB
 {
     public class UserDBContext : IdentityDbContext<User>
     {
