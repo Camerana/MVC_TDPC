@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MVC_TDPC13.DB;
-using MVC_TDPC13.DB.Entities;
-using MVC_TDPC13.Models;
+using MVC_TDPC.DB;
+using MVC_TDPC.DB.Entities;
+using MVC_TDPC.Models;
 using System.Threading.Tasks;
 
-namespace MVC_TDPC13.Controllers
+namespace MVC_TDPC.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

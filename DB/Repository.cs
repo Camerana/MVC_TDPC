@@ -1,10 +1,10 @@
-﻿using MVC_TDPC13.DB.Entities;
+﻿using MVC_TDPC.DB.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MVC_TDPC13.DB
+namespace MVC_TDPC.DB
 {
     public class Repository
     {

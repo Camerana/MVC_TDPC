@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MVC_TDPC13.DB;
-using MVC_TDPC13.DB.Entities;
-using MVC_TDPC13.Models;
+using MVC_TDPC.DB;
+using MVC_TDPC.DB.Entities;
+using MVC_TDPC.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MVC_TDPC13.Controllers
+namespace MVC_TDPC.Controllers
 {
     /*
      esercizio:

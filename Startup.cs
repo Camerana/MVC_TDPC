@@ -8,13 +8,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MVC_TDPC13.DB;
+using MVC_TDPC.DB;
 
 using Microsoft.EntityFrameworkCore;
 
 
 
-namespace MVC_TDPC13
+namespace MVC_TDPC
 {
     public class Startup
     {
