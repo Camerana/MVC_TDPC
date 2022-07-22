@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MVC_TDPC13.Models;
+using MVC_TDPC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace MVC_TDPC13.Controllers
+namespace MVC_TDPC.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

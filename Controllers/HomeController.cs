@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MVC_TDPC13.Models;
+using MVC_TDPC.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MVC_TDPC13.Controllers
+namespace MVC_TDPC.Controllers
 {
     /*
     - Creare nella pagina Javascript.cshtml un nuovo tasto che

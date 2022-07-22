@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MVC_TDPC13
+namespace MVC_TDPC
 {
     public class Startup
     {
