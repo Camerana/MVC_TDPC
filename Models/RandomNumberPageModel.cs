@@ -1,4 +1,4 @@
-﻿namespace MVC_TDPC13.Models
+﻿namespace MVC_TDPC.Models
 {
     public class RandomNumberPageModel
     {
