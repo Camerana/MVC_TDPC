@@ -67,12 +67,20 @@ namespace MVC_TDPC.Controllers
         {
             return View();
         }
+
         public IActionResult ButtonPage()
         {
             return View();
         }
+
         [Authorize]
         public IActionResult HiddenPage()
+        {
+            return View();
+        }
+
+        [Authorize(Roles = "Admin")]
+        public IActionResult AdminPage()
         {
             return View();
         }
