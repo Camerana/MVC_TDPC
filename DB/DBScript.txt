@@ -137,5 +137,5 @@ ALTER TABLE [dbo].[AspNetUserRoles] CHECK CONSTRAINT [FK_AspNetUserRoles_AspNetU
 GO
 USE [master]
 GO
-ALTER DATABASE [IdentityAuthDB] SET  READ_WRITE 
+ALTER DATABASE [AspNetIdentityDB] SET  READ_WRITE 
 GO
