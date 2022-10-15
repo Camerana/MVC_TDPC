@@ -14,8 +14,8 @@ namespace MVC_TDPC.Controllers
     [ApiController]
     public class APIController : ControllerBase
     {
-        [HttpGet("getasync")]
-        public async Task<List<string>> GetAsync()
+        [HttpGet("GetListaStringhe")]
+        public async Task<List<string>> GetListaStringhe()
         {
             List<string> result = new List<string>()
             {
@@ -45,60 +45,6 @@ namespace MVC_TDPC.Controllers
             {
                 Value = values[id]
             };
-        }
-
-        // GET api/<APIController>/5
-        [HttpGet("{id}")]
-        public async Task<object> GetAsync(int id)
-        {
-            if (id == 2)
-                return BadRequest();
-            else
-            {
-                Person person = new Person()
-                {
-                    ID = Guid.NewGuid(),
-                    Nome = "Tizio",
-                    Cognome = "Caio"
-                };
-                return Ok(person);
-            }
-        }
-
-        // GET api/<APIController>?nome=valore1&cognome=valore2
-        [HttpGet]
-        public async Task<object> GetAsync([FromQuery] string nome, [FromQuery] string cognome)
-        {
-            if (nome != "Tizio")
-                return BadRequest();
-            else
-            {
-                Person person = new Person()
-                {
-                    ID = Guid.NewGuid(),
-                    Nome = "Tizio FromQueryString",
-                    Cognome = "Caio FromQueryString"
-                };
-                return Ok(person);
-            }
-        }
-
-        // POST api/<APIController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<APIController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<APIController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }

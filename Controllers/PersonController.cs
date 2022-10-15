@@ -12,8 +12,8 @@ namespace MVC_TDPC.Controllers
     [ApiController]
     public class PersonController : ControllerBase
     {
-        [HttpGet]
-        public async Task<Person> GetAsync()
+        [HttpGet("Get")]
+        public async Task<Person> Get()
         {
             Person person = new Person()
             {
@@ -24,7 +24,7 @@ namespace MVC_TDPC.Controllers
             return person;
         }
         // POST api/<PersonController>
-        [HttpPost]
+        [HttpPost("Post")]
         public async Task<IActionResult> Post([FromBody] Person person)
         {
             if (person != null)
@@ -34,7 +34,7 @@ namespace MVC_TDPC.Controllers
             }
             return Ok(person);
         }
-        [HttpDelete]
+        [HttpDelete("Delete")]
         public async Task<IActionResult> Delete([FromBody] Person person)
         {
             if (person != null)

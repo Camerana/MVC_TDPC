@@ -8,7 +8,7 @@ function ajaxCallPerson() {
     body.Cognome = "Alighieri";
     $.ajax({
         method: "POST",
-        url: "/api/Person",
+        url: "/api/Person/Post",
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(body),
         dataType: "json",
@@ -30,7 +30,7 @@ function ajaxCallPerson() {
 function ajaxCallListaStringhe() {
     $.ajax({
         method: "GET",
-        url: "/api/API/getasync",
+        url: "/api/API/GetListaStringhe",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (data, status) {
