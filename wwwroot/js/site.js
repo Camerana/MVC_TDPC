@@ -1,7 +1,4 @@
-﻿function ButtonClick() {
-    alert("hi");
-}
-function ajaxCallPerson() {
+﻿function ajaxCallPerson() {
     var body = {};
     body.ID = "a3b5d487-0000-0000-0000-14d5c7813c8a";
     body.Nome = "Dante";
