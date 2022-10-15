@@ -57,10 +57,6 @@ namespace MVC_TDPC.Controllers
         {
             return View();
         }
-        public IActionResult ButtonPage()
-        {
-            return View();
-        }
 
         public IActionResult Persons()
         {

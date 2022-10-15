@@ -1,8 +1,4 @@
-﻿function ButtonClick() {
-    alert("hi");
-}
-
-function insertPerson() {
+﻿function insertPerson() {
     var body = {};
     body.Nome = $('#personName').val();
     body.Cognome = $('#personLastName').val();
