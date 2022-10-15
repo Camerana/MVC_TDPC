@@ -68,11 +68,6 @@ namespace MVC_TDPC.Controllers
             return View();
         }
 
-        public IActionResult ButtonPage()
-        {
-            return View();
-        }
-
         [Authorize]
         public IActionResult HiddenPage()
         {
