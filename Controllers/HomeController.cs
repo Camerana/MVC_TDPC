@@ -60,7 +60,7 @@ namespace MVC_TDPC.Controllers
         public IActionResult RandomNumberPage()
         {
             RandomNumberPageModel model = new RandomNumberPageModel();
-            model.RandomNumber = RandomNumber.GenerateNumber();
+            model.RandomNumber = this.RandomNumber.GenerateNumber();
             return View(model);
         }
 
