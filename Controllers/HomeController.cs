@@ -19,7 +19,19 @@ namespace MVC_TDPC.Controllers
         - string Canzone
     - Loggare in console e scrivere in pagina il risultato ottenuto 
     dall'endpoint
-     
+    */
+    /*
+     - Creare una nuova view (InputUtente.cshtml) con un input html.
+     - tramite un button mandare il valore dell'input al backend
+    tramite un endpoint GetFormValue
+     - restituire al client il messaggio "Input ricevuto correttamente"
+     - nel frontend stampare su schermo il messaggio ricevuto dal backend
+     */
+    /*
+     - Creare una nuova view (RandomNumber.cshtml) con un button che
+    chiami un endpoint GetRandomNumber sul backend
+     - tramite l'endpoint restituire al client un numero casuale qualsiasi
+     - nel frontend stampare su schermo il numero ricevuto dal backend
      */
     public class HomeController : Controller
     {
