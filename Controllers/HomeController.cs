@@ -33,6 +33,15 @@ namespace MVC_TDPC.Controllers
         - nell'endpoint del controller chiamare l'insert della repository
             - esempio nel branch EntityFramework in HomeController
      */
+    /*
+     - creare nel database le entità Libro e Autore
+        - autore in rapporto 1:n con libro
+     - creare la struttura necessaria per fare get e insert di libro e autore
+        - 1 controller per libro con get e insert
+        - 1 controller per autore con get e insert
+     - creare una view Libreria.cshtml che estragga sia i libri che gli autori
+     e li mostri in pagina
+     */
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
