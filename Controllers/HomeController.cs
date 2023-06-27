@@ -11,6 +11,11 @@ using System.Threading.Tasks;
 namespace MVC_TDPC.Controllers
 {
     /*
+    - nel file csproj aggiungere le due dipendenze necessarie:
+         <ItemGroup>
+            <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.17" />
+            <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+          </ItemGroup>
     - creare DB per l'identity IdentityAuthDB
     - eseguire script DBscript.txt
     - creare classe User : IdentityUser
